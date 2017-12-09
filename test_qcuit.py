@@ -126,3 +126,6 @@ class testQcuit(unittest.TestCase):
     self.q.inst(CNOT(0, 1))
     results = self.q.run()
     self.assertListEqual([[0, 1]], results)
+
+if __name__ == '__main__':
+  unittest.main()
